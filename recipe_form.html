@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title class="title">Submit a Recipe</title>
+    <link rel="stylesheet" href="recipe_form.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <button onclick="window.location.href='dashboard4.php';">Home</button>
+      </div>
+    </header>
+    <h1>Submit Your Recipe</h1>
+    <form
+      action="submit_recipe.php"
+      method="post"
+      enctype="multipart/form-data"
+      onsubmit="return validateForm()"
+    >
+      <label for="picture">Upload Picture:</label>
+      <div class="file-upload">
+        <button type="button" id="uploadBtn">Choose File</button>
+        <span id="fileChosen">No file chosen</span>
+        <input
+          type="file"
+          id="picture"
+          name="picture"
+          accept="image/*"
+          required
+          hidden
+        />
+      </div>
+      <div>
+        <label for="recipe_name">Recipe Name:</label>
+        <input type="text" id="recipe_name" name="recipe_name" required />
+      </div>
+      <div>
+        <label for="country_of_origin">Country of Origin:</label>
+        <select id="country_of_origin" name="country_of_origin" required>
+          <option value="">Select Location</option>
+        </select>
+      </div>
+      <div>
+        <label for="ETA_hr">ETA (Hours):</label>
+        <input type="number" id="ETA_hr" name="ETA_hr" required min="0" />
+      </div>
+      <div>
+        <label for="ETA_min">ETA (Minutes):</label>
+        <input
+          type="number"
+          id="ETA_min"
+          name="ETA_min"
+          required
+          min="0"
+          max="59"
+        />
+      </div>
+      <h2>Ingredients</h2>
+      <div id="ingredientsContainer"></div>
+      <button type="button" onclick="addIngredient()">Add Ingredient</button>
+      <h2>Instructions</h2>
+      <div id="instructionsContainer"></div>
+      <button type="button" onclick="addInstruction()">Add Instruction</button>
+      <br />
+      <button type="submit">Submit Recipe</button>
+    </form>
+    <script src="recipe_form.js"></script>
+    <script src="countries.js"></script>
+  </body>
+</html>
