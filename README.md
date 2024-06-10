@@ -3,7 +3,9 @@ Culinary Junction is one window where food lovers can share their traditional re
 
 CULINARY JUNCTION
 
+```
 # Files
+
 
 web_database_project_v2/web_database_project_v2/
 ├── assets/             # Folder for static assets 
@@ -36,7 +38,7 @@ web_database_project_v2/web_database_project_v2/
 ├── register.html       # HTML file for registration page
 └── recipe_form.html    # HTML file for recipe submission form
 
-
+```
 
 # Database Schema
 
@@ -62,12 +64,12 @@ Similar to the likes.sql file, this file is used for storing and managing users'
 
 # Languages/Tools 
 
-##HTML
-## CSS
-## JavaScript
-## PHP
-## SQL
-## VS Code
-## Google  (for recipe photos during testing)
+HTML
+CSS
+JavaScript
+PHP
+SQL
+VS Code
+Google  (for recipe photos during testing)
 
 "Index.php" serves as the home page.
