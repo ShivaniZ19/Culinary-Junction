@@ -64,12 +64,6 @@ Similar to the likes.sql file, this file is used for storing and managing users'
 
 # Languages/Tools 
 
-HTML
-CSS
-JavaScript
-PHP
-SQL
-VS Code
-Google  (for recipe photos during testing)
+HTML, CSS, JavaScript, PHP, SQL, VS Code, Google  (for recipe photos during testing)
 
 "Index.php" serves as the home page.
